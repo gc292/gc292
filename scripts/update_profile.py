@@ -122,6 +122,7 @@ if __name__ == '__main__':
     readme = readme_path.read_text()
     for filename, svg in rendered.items():
         version = hashlib.sha256((svg + '\n').encode()).hexdigest()[:12]
-        pattern = r'((?:src|srcset)=")' + re.escape(filename) + r'(?:\?[^"\s]*)?"'
-        readme = re.sub(pattern, lambda match: match[1] + filename + '?v=' + version + '"', readme)
+        pattern = r'((?:src|srcset)=")(?:https://raw\.githubusercontent\.com/[^"\s]+/)?' + re.escape(filename) + r'(?:\?[^"\s]*)?"'
+        url = f'https://raw.githubusercontent.com/{config["username"]}/{config["username"]}/main/{filename}?v={version}'
+        readme = re.sub(pattern, lambda match: match[1] + url + '"', readme)
     readme_path.write_text(readme)
