@@ -2,6 +2,8 @@
 
 Personal fields are in `profile.json`; ASCII initials and layout are in `scripts/update_profile.py`. Run `python3 scripts/update_profile.py` to regenerate dark/light desktop and compact SVGs. Only the Python standard library is required. `README.md` selects the theme and compact layout using `<picture>` and provides clickable GitHub, LinkedIn and email links.
 
+The generator also versions the four image URLs in README.md with a hash of their SVG content. Changed artwork receives a new URL so cached profile images refresh; unchanged artwork retains the same URL. The Action commits README.md along with the SVGs.
+
 The Action runs daily, on manual dispatch and on configuration/generator/workflow changes. Its built-in `github.token` supplies optional API authentication and authorizes committing the four SVGs. No personal access token is required.
 
 Statistics come from GitHub's public API:

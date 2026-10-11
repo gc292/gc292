@@ -1,8 +1,10 @@
 """Generate neofetch profile SVGs with public GitHub statistics."""
 import datetime as dt
 import html
+import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import sys
 import urllib.parse
@@ -115,3 +117,11 @@ if __name__ == '__main__':
     }
     for filename, svg in rendered.items():
         (ROOT / filename).write_text(svg + '\n')
+    # Version image URLs by content so GitHub's image cache sees fresh artwork.
+    readme_path = ROOT / 'README.md'
+    readme = readme_path.read_text()
+    for filename, svg in rendered.items():
+        version = hashlib.sha256((svg + '\n').encode()).hexdigest()[:12]
+        pattern = r'((?:src|srcset)=")' + re.escape(filename) + r'(?:\?[^"\s]*)?"'
+        readme = re.sub(pattern, lambda match: match[1] + filename + '?v=' + version + '"', readme)
+    readme_path.write_text(readme)
