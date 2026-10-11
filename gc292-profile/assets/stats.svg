@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-label="Public repository statistics">
+<rect x="1" y="1" width="898" height="158" rx="16" fill="#101820" stroke="#283b43"/>
+<g font-family="Arial, sans-serif"><text x="36" y="29" fill="#9aaeb7" font-size="10" letter-spacing="2">GITHUB / PUBLIC SNAPSHOT</text>
+<text x="36" y="83" font-size="34" fill="#8fe3cf">4</text><text x="36" y="112" font-size="10" letter-spacing="1.5" fill="#9aaeb7">PUBLIC ORIGINAL REPOS</text><text x="316" y="83" font-size="34" fill="#8fe3cf">1</text><text x="316" y="112" font-size="10" letter-spacing="1.5" fill="#9aaeb7">REPOSITORY STARS</text><text x="596" y="83" font-size="34" fill="#8fe3cf">Java</text><text x="596" y="112" font-size="10" letter-spacing="1.5" fill="#9aaeb7">TOP REPO LANGUAGE</text>
+<text x="36" y="141" fill="#71868f" font-size="10">Original public repositories · language by repository count · refreshed 11 Oct 2026 UTC</text></g></svg>
