@@ -1,0 +1,23 @@
+{
+  "username": "gc292",
+  "heading": "guilherme@gc292",
+  "art": "penguin",
+  "system": [
+    ["OS", "Linux"],
+    ["Host", "Instituto Superior Técnico"],
+    ["Kernel", "Student / Developer"],
+    ["Shell", "Bash"],
+    ["Focus", "Backend, Distributed Systems"]
+  ],
+  "languages": [
+    ["Languages.Programming", "Java, Python, JavaScript"],
+    ["Languages.Data", "SQL, JSON, YAML"],
+    ["Tools.Build", "Maven, Gradle, Git"],
+    ["Tools.Infrastructure", "Docker, Kubernetes, Linux"]
+  ],
+  "projects": [
+    ["Projects.Bot", "futebol-bot"],
+    ["Projects.Multiplayer", "IsKahoot"],
+    ["GitHub", "github.com/gc292"]
+  ]
+}

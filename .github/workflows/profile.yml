@@ -1,0 +1,33 @@
+name: Refresh profile statistics
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - profile.json
+      - scripts/update_profile.py
+      - .github/workflows/profile.yml
+permissions:
+  contents: write
+concurrency:
+  group: profile-statistics
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate dark and light profiles
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update_profile.py
+      - name: Commit profile
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dark_mode.svg light_mode.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh terminal profile'
+            git push
+          fi
