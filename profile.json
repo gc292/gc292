@@ -3,21 +3,26 @@
   "heading": "guilherme@gc292",
   "art": "penguin",
   "system": [
-    ["OS", "Linux"],
+    ["OS", "Ubuntu / Linux"],
     ["Host", "Instituto Superior Técnico"],
-    ["Kernel", "Student / Developer"],
+    ["Kernel", "MSc Student · Telecommunications & Informatics"],
     ["Shell", "Bash"],
-    ["Focus", "Backend, Distributed Systems"]
+    ["Focus", "Distributed Systems · Cloud · Security"]
   ],
-  "languages": [
-    ["Languages.Programming", "Java, Python, JavaScript"],
-    ["Languages.Data", "SQL, JSON, YAML"],
-    ["Tools.Build", "Maven, Gradle, Git"],
-    ["Tools.Infrastructure", "Docker, Kubernetes, Linux"]
+  "education": [
+    "BSc · Telecommunications",
+    "& Informatics / ISCTE"
+  ],
+  "stack": [
+    ["Programming", "Java, Python, JavaScript, SQL"],
+    ["Systems", "Paxos, Multi-Paxos, gRPC"],
+    ["Cloud", "Docker, Kubernetes, Terraform, GCP"],
+    ["Networking", "TCP/IP, Routing Protocols, Wireshark"],
+    ["Security", "Digital Forensics, Network Security"],
+    ["Tools", "Git, Maven"]
   ],
   "projects": [
-    ["Projects.Bot", "futebol-bot"],
-    ["Projects.Multiplayer", "IsKahoot"],
-    ["GitHub", "github.com/gc292"]
+    ["futebol-bot", "Discord · attendance & balanced teams"],
+    ["IsKahoot", "Java · multiplayer quizzes"]
   ]
 }
