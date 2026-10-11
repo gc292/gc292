@@ -1,4 +1,4 @@
-name: Refresh profile statistics
+name: Generate terminal profile
 on:
   schedule:
     - cron: '23 6 * * *'

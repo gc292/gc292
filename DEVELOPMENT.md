@@ -1,13 +1,19 @@
-# Profile generation
+# Neofetch profile generation
 
-`README.md` displays SVG artwork with `<picture>`: dark/light themes and a narrower layout for viewports up to 650px. GitHub's image proxy may delay visible updates.
+Personal fields are in `profile.json`; ASCII initials and layout are in `scripts/update_profile.py`. Run `python3 scripts/update_profile.py` to regenerate dark/light desktop and compact SVGs. Only the Python standard library is required. `README.md` selects the theme and compact layout using `<picture>` and provides clickable GitHub, LinkedIn and email links.
 
-Personal content lives in `profile.json`. Keep values concise: the generator validates a 60-character text grid and rejects rows that would overflow. The desktop layout places the Linux ASCII art beside the profile; the compact layout moves the profile below it. Both use the same content and colours.
+The Action runs daily, on manual dispatch and on configuration/generator/workflow changes. Its built-in `github.token` supplies optional API authentication and authorizes committing the four SVGs. No personal access token is required.
 
-Run `python3 scripts/update_profile.py` from the repository to regenerate all four SVGs. Python's standard library is sufficient. `GH_TOKEN` is optional locally; GitHub Actions supplies its built-in token automatically. For an offline preview, pass a saved GitHub user API response: `python3 scripts/update_profile.py /path/to/user.json`.
+Statistics come from GitHub's public API:
 
-The generator requests only the public user endpoint. `public_repos` comes from GitHub (including forks and this profile repository); account age is calculated from `created_at` in UTC. The refresh date is also calculated in UTC. No follower, star, commit or lines-of-code metrics are displayed or estimated.
+- Repos: public repository count, including forks and the profile repository.
+- Commits.Public: public indexed commits authored by gc292, returned by commit search (`author:gc292 is:public`). This is not private activity or the contributions calendar. Incomplete searches stop generation and preserve existing SVGs.
+- Stars: stars across original public repositories, excluding forks.
+- Followers: the public follower count.
+- Uptime and Account.Uptime: days since the GitHub account was created, calculated in UTC. Uptime is explicitly marked `(GitHub)` because no birth date or host boot time has been provided.
 
-The existing Action runs daily, on manual dispatch, and when the configuration, generator or workflow changes. It regenerates and commits all four SVGs. Configuration changes must be accompanied by regenerated SVGs for an immediate local preview.
+Commit search documentation: https://docs.github.com/en/rest/search/search#search-commits
 
-The public project highlights are futebol-bot and IsKahoot. Private academic work informs the confirmed engineering stack but is not linked or exposed. Fast Paxos is not presented as completed work. All visible profile content is in English.
+An offline snapshot may be passed as the sole command argument. It must contain `user` (GitHub user response), `repos` (all pages of the public repository list), and `commits` (commit search response). The snapshot is not committed. Personal configuration never contains fixed statistics.
+
+The generator validates a 65-character grid with 24-character labels and 41-character values. Long descriptions can use continuation rows with an empty label. All four variants are rendered before any output is written, so API/validation failures preserve previous artwork.

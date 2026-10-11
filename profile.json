@@ -1,28 +1,69 @@
 {
   "username": "gc292",
   "heading": "guilherme@gc292",
-  "art": "penguin",
+  "art": "initials",
   "system": [
-    ["OS", "Ubuntu / Linux"],
-    ["Host", "Instituto Superior Técnico"],
-    ["Kernel", "MSc Student · Telecommunications & Informatics"],
-    ["Shell", "Bash"],
-    ["Focus", "Distributed Systems · Cloud · Security"]
+    [
+      "OS",
+      "Ubuntu, Windows"
+    ],
+    [
+      "Uptime",
+      "{account_age} (GitHub)"
+    ],
+    [
+      "Host",
+      "Instituto Superior Técnico"
+    ],
+    [
+      "Kernel",
+      "MSc Telecommunications & Informatics"
+    ],
+    [
+      "IDE",
+      "VS Code, IntelliJ IDEA"
+    ]
   ],
-  "education": [
-    "BSc · Telecommunications",
-    "& Informatics / ISCTE"
+  "languages": [
+    [
+      "Languages.Programming",
+      "Java, Python, JavaScript"
+    ],
+    [
+      "Languages.Computer",
+      "SQL, Bash, YAML"
+    ],
+    [
+      "Languages.Real",
+      "Portuguese, English"
+    ]
   ],
-  "stack": [
-    ["Programming", "Java, Python, JavaScript, SQL"],
-    ["Systems", "Paxos, Multi-Paxos, gRPC"],
-    ["Cloud", "Docker, Kubernetes, Terraform, GCP"],
-    ["Networking", "TCP/IP, Routing Protocols, Wireshark"],
-    ["Security", "Digital Forensics, Network Security"],
-    ["Tools", "Git, Maven"]
+  "hobbies": [
+    [
+      "Hobbies.Software",
+      "Cybersecurity, Distributed Systems"
+    ],
+    [
+      "",
+      "Self-Hosting, AI & Automation"
+    ],
+    [
+      "Hobbies.Hardware",
+      "Homelabbing, PC Building"
+    ]
   ],
-  "projects": [
-    ["futebol-bot", "Discord · attendance & balanced teams"],
-    ["IsKahoot", "Java · multiplayer quizzes"]
+  "contact": [
+    [
+      "GitHub",
+      "github.com/gc292"
+    ],
+    [
+      "LinkedIn",
+      "linkedin.com/in/guilherme-caria"
+    ],
+    [
+      "Email",
+      "guicaria52@gmail.com"
+    ]
   ]
 }
