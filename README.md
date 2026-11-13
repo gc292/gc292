@@ -1,8 +1,8 @@
 <picture>
-  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/dark_mode_compact.svg?v=604908251441">
-  <source media="(max-width: 650px)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/light_mode_compact.svg?v=7178589022d6">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/dark_mode.svg?v=3624c5fa9ab2">
-  <img src="https://raw.githubusercontent.com/gc292/gc292/main/light_mode.svg?v=03c422791959" width="100%" alt="guilherme@gc292 — GC ASCII neofetch profile. Ubuntu and Windows; MSc student in Telecommunications and Informatics at Instituto Superior Técnico; VS Code and IntelliJ IDEA. Programming: Java, Python, C++. Computer languages: SQL, Bash, YAML. Spoken languages: Portuguese and English. Hobbies: cybersecurity, distributed systems, self-hosting, AI and automation, homelabbing and PC building. GitHub statistics update daily using public indexed data. Uptime represents GitHub account age.">
+  <source media="(max-width: 650px) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/dark_mode_compact.svg?v=6df0516eb6c5">
+  <source media="(max-width: 650px)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/light_mode_compact.svg?v=eca4a511b3a4">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gc292/gc292/main/dark_mode.svg?v=a5aa6228fcf4">
+  <img src="https://raw.githubusercontent.com/gc292/gc292/main/light_mode.svg?v=1f3d62df5330" width="100%" alt="guilherme@gc292 — GC ASCII neofetch profile. Ubuntu and Windows; MSc student in Telecommunications and Informatics at Instituto Superior Técnico; VS Code and IntelliJ IDEA. Programming: Java, Python, C++. Computer languages: SQL, Bash, YAML. Spoken languages: Portuguese and English. Hobbies: cybersecurity, distributed systems, self-hosting, AI and automation, homelabbing and PC building. GitHub statistics update daily using public indexed data. Uptime represents GitHub account age.">
 </picture>
 
 <p align="right">
